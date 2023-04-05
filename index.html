@@ -20,18 +20,20 @@
 </script>
 
 <style>
-     body {
+
+    body {
         align-content: center;
         background-color: rgb(29, 29, 29);
         color: white; 
         text-align: center;
-        }
+    }
 
 
-    .glow-on-hover {
+.glow-on-hover {
     width: 220px;
     height: 50px;
     margin: 10px;
+    font-weight: bold;
     border: none;
     outline: none;
     color: #fff;
@@ -44,7 +46,7 @@
 
 .glow-on-hover:before {
     content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background: linear-gradient(45deg, #990404, #9f4800, #666408, #247604, #037865, #041985, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
     top: -2px;
     left:-2px;
@@ -54,14 +56,13 @@
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     animation: glowing 20s linear infinite;
-    -webkit-animation: glowing 20s linear infinite;
     opacity: 0;
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
 }
 
 .glow-on-hover:active {
-    color: #000
+    color: #ffffff
 }
 
 .glow-on-hover:active:after {
@@ -90,6 +91,11 @@
     100% { background-position: 0 0; }
 }
 
+.always-glowing:before {
+    animation: glowing 20s linear infinite;
+    opacity: 1;
+}
+
 </style>
 
 </head>
@@ -97,9 +103,9 @@
     <h1>Best apps to download videos</h1>
     <span>Simple and light applications for you to download several videos from the internet.</span>
     <div>
-    <button class="glow-on-hover" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.bgw.downph'">ProHub - Video Downloader</button>
-    <button class="glow-on-hover" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.bgw.downbrowser'">Browser - Video Downloader</button>
-    <button class="glow-on-hover" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.bgw.downxh'">Hamster - Video Downloader</button>
+    <button class="glow-on-hover always-glowing" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.bgw.downph'">ProHub - Video Downloader</button>
+    <button class="glow-on-hover always-glowing" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.bgw.downbrowser'">Browser - Video Downloader</button>
+    <button class="glow-on-hover always-glowing" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.bgw.downxh'">Hamster - Video Downloader</button>
 </div>
 </body>
 </html>
