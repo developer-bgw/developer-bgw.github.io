@@ -21,18 +21,23 @@
 
 <style>
 
-    body {
+body {
         align-content: center;
         background-color: rgb(29, 29, 29);
         color: white; 
         text-align: center;
-    }
+}
 
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .glow-on-hover {
     width: 220px;
     height: 50px;
-    margin: 10px;
+    margin-top: 35px;
     font-weight: bold;
     border: none;
     outline: none;
@@ -102,7 +107,7 @@
 <body>
     <h1>Best apps to download videos</h1>
     <span>Simple and light applications for you to download several videos from the internet.</span>
-    <div>
+<div class="button-container">
     <button class="glow-on-hover always-glowing" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.bgw.downph'">ProHub - Video Downloader</button>
     <button class="glow-on-hover always-glowing" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.bgw.downbrowser'">Browser - Video Downloader</button>
     <button class="glow-on-hover always-glowing" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.bgw.downxh'">Hamster - Video Downloader</button>
